@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTML5</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">HTML5 Praktikum</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">Forme</a>
+                    </li>
+                    <li>
+                        <a href="#services">Grafika</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Multimedija</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                      
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+	<a  name="services"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"> &lt;!DOCTYPE&gt; Deklaracija</h2>
+                    <p class="lead">Da bi stranica bila prepoznata kao HTML5 dokument, od strane browsera. Na samom početku strane se stavlja oznaka &lt;!DOCTYPE html&gt; </p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/doctype.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Struktura HTML5 Strane<br>novi elementi</h2>
+                    <p class="lead">HTML5 sadrži dosta novih tagova. Od osnovnih &lt;header&gt; i &lt;footer&gt; koji služe za osnovno struktuiranje naših stranica, do &lt;canvas&gt; i &lt;audio&gt; za pravljenje multimedijalnih sadržaja.</p>
+                    <hr>
+                    <br>
+                    <h3>Novi elementi</h3>
+                    <ul>
+                        <li> &lt;header&gt;</li>
+                        <p>Header definiše naslovni deo strane, ili nekog dela</p>
+                        <li> &lt;main&gt;</li>
+                        <p>Main definiše glavni sadržaj stranice</p>
+                         <li> &lt;article&gt;</li>
+                        <p>Označava određeni deo dokumenta</p>
+                         <li> &lt;footer&gt;</li>
+                        <p>Definiše sadržaj dokumenta koji se nalazi na dnu</p>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/html5_structure.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">HTML5 Forme<br>validacija</h2>
+                    <p class="lead">Pomoću novog required atributa, veoma je lako napraviti validnu formu, samo sa HTML-om</p>
+                    <form style="width:25%">
+
+                    <fieldset>
+                    <legend>HTML5</legend>
+                    <!-- omogucava pomoc pri unosenju u tekstualno polje-->
+                    <input list="predmeti">
+                    <datalist id="predmeti">
+                    <option value="Graficki dizajn">
+                    <option value="Uvod u web dizajn">
+                    <option value="Uvod u programiranje">
+                    </datalist><br>
+                    <!-- kreiranje klizaca-->
+                    0<input type="range" value="30" min="0" max="100">100
+                    <!-- automatski generisan padajuci meni-->
+                    <br>Kada ste rodjeni?<input type="number" value="1974" min="1900" max="2014">
+                    <!-- onjasnjenje formata podatka koji se trazi-->
+                    <br><input type="text" placeholder="Unesite vase ime"><br>
+                    <!-- obavezno polje-->
+                    <input type="email" placeholder="adresa@xx.com" required><br>
+                    <!-- biranje boje-->
+                    Izaberi boju<input type="color"><br>
+
+                    Sajt:<input type="url"><br>
+
+                    </fieldset>
+                    <input type="submit">
+                    </form>
+
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/validate.png" alt=""><br>
+                    <img class="img-responsive" src="img/validate2.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+	  <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr>
+                    <div class="clearfix"></div>
+
+                    <h2 class="section-heading"> HTML5 Canvas</h2>
+                    <p class="lead">Pomoću novog &lt;canvas&gt; taga možemo kreirati razne grafičke elemente</p>
+                    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+                    Your browser does not support the HTML5 canvas tag.</canvas>
+
+                    <script>
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+                    ctx.beginPath();
+                    ctx.arc(95,50,40,0,2*Math.PI);
+                    ctx.stroke();
+                    </script> 
+
+                     <canvas id="myCanvas1" width="200" height="100" style="border:1px solid #d3d3d3;">
+                    Your browser does not support the HTML5 canvas tag.</canvas>
+
+                    <script>
+                    var c = document.getElementById("myCanvas1");
+                    var ctx = c.getContext("2d");
+                    ctx.moveTo(0,0);
+                    ctx.lineTo(200,100);
+                    ctx.stroke();
+                    </script>
+
+                    <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;">
+                    Your browser does not support the HTML5 canvas tag.</canvas>
+
+                    <script>
+                    var c = document.getElementById("myCanvas2");
+                    var ctx = c.getContext("2d");
+                    // Create gradient
+                    var grd = ctx.createLinearGradient(0,0,200,0);
+                    grd.addColorStop(0,"red");
+                    grd.addColorStop(1,"white");
+                    // Fill with gradient
+                    ctx.fillStyle = grd;
+                    ctx.fillRect(10,10,150,80);
+                    </script>
+
+                <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+
+                <script>
+                var c = document.getElementById("myCanvas3");
+                var ctx = c.getContext("2d");
+                ctx.font = "30px Arial";
+                ctx.strokeText("Hello World",10,50);
+                </script>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                     <hr>
+                    <div class="clearfix"></div>
+                       <h2 class="section-heading"> SVG</h2>
+                       <p class="lead">Novi HTML &lt;svg&gt; služi kao kontejner za SVG grafiku. .</p>
+
+                    <svg width="200" height="200">
+                      <circle cx="50" cy="50" r="40"
+                      stroke="green" stroke-width="4" fill="yellow" />
+                    Sorry, your browser does not support inline SVG.
+                    </svg>
+
+                 <svg width="200" height="200">
+                  <rect x="50" y="20" rx="20" ry="20" width="110" height="110"
+                  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+                Sorry, your browser does not support inline SVG.
+                </svg>
+                
+                <svg width="200" height="200">
+                  <polygon points="100,10 40,198 190,78 10,78 160,198"
+                  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+                Sorry, your browser does not support inline SVG.
+                </svg>
+                <svg height="200" width="200">
+                  <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%"
+                      style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                      <stop offset="100%"
+                      style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                  <text fill="#ffffff" font-size="45" font-family="Verdana"
+                  x="50" y="86">SVG</text>
+                Sorry, your browser does not support inline SVG.
+                </svg>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+     
+     <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Video</h2>
+                    <p class="lead">Sa video tagom možemo ubacivati video materijal na našu stranicu</p>
+                    <p>&lt;video width="420" height="340" controls&gt;<br> &lt;source="media/maca.mp4 type="video/mp4"&gt; <br> 
+                    &lt;/video&gt;</p>
+                   
+                <video width="420" height="340" controls>
+                  <source src="media/maca.mp4" type="video/mp4">
+                  <source src="media/maca.mp4" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                     <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Audio</h2>
+                    <p class="lead">PNašoj stranici možemo dodati i samo audio zvuk.</p>
+                     <p>&lt;audio controls&gt;<br> 
+                         &lt;source="horse.mp3" type="audio/mpeg"&gt; <br> 
+                    &lt;/audio&gt;</p>
+                    <audio controls>
+                      <source src="horse.ogg" type="audio/ogg">
+                      <source src="horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                   
+                    <p class="copyright text-muted small">Copyright &copy; Nemanja</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
